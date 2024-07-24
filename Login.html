@@ -2,6 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="/styles/login.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/scripts/login.js"></script>
     <title>Login Page</title>
 </head>
 <body class="background">
@@ -14,8 +16,9 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <br>
-            <input type="submit" value="Login">
+            <button type="button" id="loginButton">Login</button>
+            <p id="errorMessage"></p>
         </form>
-    </divdiv>
+    </div>
 </body>
 </html>

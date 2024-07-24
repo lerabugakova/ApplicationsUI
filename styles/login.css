@@ -14,7 +14,7 @@
     margin-bottom: 10px;
 }
 
-.login-form input[type="submit"] {
+.login-form button {
     background-color: #228B22;
     color: white;
     padding: 10px 20px;
@@ -33,4 +33,8 @@
 }
 .background{
     background: #e4e4e4;
+}
+
+.login-form p {
+    color: rgb(255, 0, 0);
 }
