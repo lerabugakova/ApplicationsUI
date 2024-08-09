@@ -1,0 +1,67 @@
+.form button {
+    background-color: #228B22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+	border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.filter {
+    display: flex;
+	width: 100%;
+    height: 40px;
+}
+
+.filter p{
+    padding: 5px;
+    margin: 5px;
+}
+
+.filter select{
+    width: 135px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons {
+	width: 20px;
+}

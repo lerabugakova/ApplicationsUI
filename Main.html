@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Заявки</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/scripts/manager.js"></script>
+    <title id ="title">Заявки</title>
 </head>
-<body>
-    <button>Add</button>
-    <table>
+<body id="form" class="form">
+    <div class="filter">
+    <p style="min-width: 60px;">Статус :</p>
+        <select>
+            <option value="Done">Выполнено</option>
+            <option value="Pending">В ожидании</option>
+        </select>
+    <p style="min-width: 60px;">Тип :</p>
+        <select style="width: fit-content;">
+            <option value="Accident">Авария по электричеству</option>
+            <option value="OurAccident">Наша авария</option>
+            <option value="Attention">Внимание</option>
+            <option value="New">Новое подключение</option>
+        </select>   
+        <button id="addApplication" style="min-width: 150px;">Создать Заявку</button>
+        
+        <p align="right" style="width: inherit;">Валерия</p>
+        <button id="logoutButton" style="float: right;">Выйти</button>
+    </div>
+    <table class="table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Age</th>
+                <th>Homeр заявки</th>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Абонент</th>
+                <th>Адрес</th>
+                <th>Проишествие</th>
+                <th>Кем выполнено</th>
+                <th>Дата выполнения</th>
+                <th>Фото</th>
+                <th>Дежурный</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>John</td>
-                <td>25</td>
+                <td>123</td>
+                <td>25.03.20221</td>
+                <td>12:00</td>
+                <td>Иванов Иван Иванович</td>
+                <td>ул. Ленина 1</td>
+                <td>Потек кран</td>
+                <td>Петров Петр Петрович</td>
+                <td>25.03.2021</td>
+                <td><a href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">Открыть</td>
+                <td>Сидоров Сидор Сидорович</td>
+                <td>
+                    <a href=""><img src="/icons/delete.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                </td>           
             </tr>
             <tr>
-                <td>Jane</td>
-                <td>30</td>
+                <td>123</td>
+                <td>25.03.20221</td>
+                <td>12:00</td>
+                <td>Иванов Иван Иванович</td>
+                <td>ул. Ленина 1</td>
+                <td>Потек кран</td>
+                <td>Петров Петр Петрович</td>
+                <td>25.03.2021</td>
+                <td><a href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">Открыть</td>
+                <td>Сидоров Сидор Сидорович</td>
+                <td>
+                    <a href=""><img src="/icons/delete.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                </td>                
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>25.03.20221</td>
+                <td>12:00</td>
+                <td>Иванов Иван Иванович</td>
+                <td>ул. Ленина 1</td>
+                <td>Потек кран</td>
+                <td>Петров Петр Петрович</td>
+                <td>25.03.2021</td>
+                <td><a href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">Открыть</td>
+                <td>Сидоров Сидор Сидорович</td>
+                <td>
+                    <a href="" title="Удалить"><img src="/icons/delete.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                    <a href=""><img src="/icons/edit.png" class="icons"></a>
+                </td>               
             </tr>
         </tbody>
     </table>
